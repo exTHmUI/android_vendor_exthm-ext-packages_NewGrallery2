@@ -1,0 +1,3 @@
+[1/2] Building CXX object CMakeFiles/libsprdjni_eglfence2.dir/jni/jni_egl_fence.cpp.o
+clang++: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[2/2] Linking CXX shared library /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/armeabi-v7a/libsprdjni_eglfence2.so

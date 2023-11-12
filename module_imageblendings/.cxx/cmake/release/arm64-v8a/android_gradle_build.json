@@ -1,0 +1,57 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/.cxx/cmake/release/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"fbextraction-lib-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "fbextraction-lib",
+			"buildType" : "release",
+			"output" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/libs/arm64-v8a/libfbextraction.so",
+			"toolchain" : "8418698154958291225"
+		},
+		"imageblend-lib-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "imageblend-lib",
+			"buildType" : "release",
+			"output" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/libs/arm64-v8a/libimageblend.so",
+			"toolchain" : "8418698154958291225"
+		},
+		"libjni_sprd_imageblendings-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libjni_sprd_imageblendings",
+			"buildCommand" : "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/.cxx/cmake/release/arm64-v8a --target libjni_sprd_imageblendings",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dlibjni_sprd_imageblendings_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O2 -DNDEBUG  -s -fPIC    -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/jni/jni_sprd_imageblending.cpp",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/.cxx/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libjni_sprd_imageblendings.so",
+			"toolchain" : "8418698154958291225"
+		}
+	},
+	"toolchains" : 
+	{
+		"8418698154958291225" : 
+		{
+			"cCompilerExecutable" : "/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

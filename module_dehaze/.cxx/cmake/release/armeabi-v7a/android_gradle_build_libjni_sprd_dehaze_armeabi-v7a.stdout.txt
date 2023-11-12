@@ -1,0 +1,3 @@
+[1/2] Building CXX object CMakeFiles/libjni_sprd_dehaze.dir/jni/jni_sprd_dehaze.cpp.o
+clang++: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[2/2] Linking CXX shared library /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/armeabi-v7a/libjni_sprd_dehaze.so

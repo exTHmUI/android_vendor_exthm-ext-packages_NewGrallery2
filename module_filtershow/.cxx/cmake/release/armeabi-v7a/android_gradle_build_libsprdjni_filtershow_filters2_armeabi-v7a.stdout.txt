@@ -1,0 +1,79 @@
+[1/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/redEyeMath.c.o
+[2/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/bwfilter.c.o
+[3/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/contrast.c.o
+[4/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/edge.c.o
+[5/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/exposure.c.o
+[6/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/fx.c.o
+[7/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/geometry.c.o
+[8/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/gradient.c.o
+[9/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/highlight.c.o
+[10/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/hsv.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[11/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/hue.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+In file included from /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/highlight.c:19:
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/filters.h:48:16: warning: inline function 'clampMax' is not defined [-Wundefined-inline]
+__inline__ int clampMax(int c, int max);
+               ^
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/highlight.c:33:17: note: used here
+        int v = clampMax(hsv[0], 4080);
+                ^
+1 warning generated.
+[12/20] Building CXX object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/kmeans.cc.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+In file included from /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/exposure.c:17:
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/filters.h:46:26: warning: inline function 'clamp' is not defined [-Wundefined-inline]
+__inline__ unsigned char clamp(int c);
+                         ^
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/exposure.c:30:20: note: used here
+        rgb[RED] = clamp((255 * (rgb[RED])) / m);
+                   ^
+1 warning generated.
+[13/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/negative.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[14/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/redeye.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[15/20] Building CXX object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/tinyplanet.cc.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[16/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/saturated.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+In file included from /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/fx.c:17:
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/filters.h:46:26: warning: inline function 'clamp' is not defined [-Wundefined-inline]
+__inline__ unsigned char clamp(int c);
+                         ^
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/fx.c:78:20: note: used here
+        rgb[RED] = clamp(interp(lutrgb, p, off, dr, dg, db));
+                   ^
+1 warning generated.
+[17/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/shadows.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+In file included from /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/hue.c:17:
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/filters.h:46:26: warning: inline function 'clamp' is not defined [-Wundefined-inline]
+__inline__ unsigned char clamp(int c);
+                         ^
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/hue.c:37:20: note: used here
+        rgb[RED] = clamp((int) rf);
+                   ^
+1 warning generated.
+[18/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/vibrance.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[19/20] Building C object CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/wbalance.c.o
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+In file included from /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/wbalance.c:17:
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/filters.h:46:26: warning: inline function 'clamp' is not defined [-Wundefined-inline]
+__inline__ unsigned char clamp(int c);
+                         ^
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/wbalance.c:164:20: note: used here
+        rgb[RED] = clamp(Rc);
+                   ^
+1 warning generated.
+clang++: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[20/20] Linking CXX shared library /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/armeabi-v7a/libsprdjni_filtershow_filters2.so

@@ -1,0 +1,3 @@
+[1/2] Building CXX object bokeh/CMakeFiles/libjni_sprd_real_bokeh.dir/jni/sprdrealbokeh.cpp.o
+clang++: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+[2/2] Linking CXX shared library /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libjni_sprd_real_bokeh.so

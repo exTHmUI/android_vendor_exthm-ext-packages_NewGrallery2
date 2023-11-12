@@ -1,0 +1,7 @@
+[1/2] Building CXX object CMakeFiles/libjni_sprd_smarterase.dir/jni/jni_sprd_smarterase.cpp.o
+clang++: warning: argument unused during compilation: '-s' [-Wunused-command-line-argument]
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/jni/jni_sprd_smarterase.cpp:34:44: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    int success = InpaintLiteInit(&handle, "/system/etc/models/GatedConv_GLNet_256x256.tflite", 4,
+                                           ^
+1 warning generated.
+[2/2] Linking CXX shared library /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/armeabi-v7a/libjni_sprd_smarterase.so

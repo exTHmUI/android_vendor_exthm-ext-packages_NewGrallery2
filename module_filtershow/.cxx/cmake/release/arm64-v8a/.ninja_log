@@ -1,0 +1,21 @@
+# ninja log v5
+0	55	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/exposure.c.o	60c967a32d3161b6
+0	56	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/bwfilter.c.o	2d0550724bb5f62e
+1	59	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/hsv.c.o	9ef715161ecd7710
+1	63	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/fx.c.o	5b0c771f4f0eaa3
+0	67	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/contrast.c.o	95f7de3bbee98be6
+1	72	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/gradient.c.o	ec9e6229fd42dfda
+1	75	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/highlight.c.o	2e00534f30c4a61f
+60	103	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/negative.c.o	bb09676d1d55bbf6
+63	107	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/redeye.c.o	73492cba09f0fe3c
+72	112	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/saturated.c.o	c03032f145ee5b5
+0	118	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/edge.c.o	f9f9a5c87afcd7a3
+56	123	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/hue.c.o	1c8b1a1a3517033b
+75	153	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/shadows.c.o	14e1325da11336ae
+104	160	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/vibrance.c.o	da7c37d0ce596055
+1	182	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/geometry.c.o	1f3cfb4df88ef6a9
+67	214	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/tinyplanet.cc.o	1e8c7051bfbb4de2
+107	253	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/wbalance.c.o	2c60cd11d46e2497
+56	258	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/kmeans.cc.o	e72c69842f872150
+0	308	0	CMakeFiles/libsprdjni_filtershow_filters2.dir/jni/redEyeMath.c.o	60f8b9a72bdf782
+308	322	0	/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libsprdjni_filtershow_filters2.so	830f5889251b59b7

@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_dehaze/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_dehaze/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "dehaze-lib-Release-armeabi-v7a": {
+      "artifactName": "dehaze-lib",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_dehaze/libs/armeabi-v7a/libDehaze.so"
+    },
+    "libjni_sprd_dehaze-Release-armeabi-v7a": {
+      "artifactName": "libjni_sprd_dehaze",
+      "buildCommand": "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_dehaze/.cxx/cmake/release/armeabi-v7a --target libjni_sprd_dehaze",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/armeabi-v7a/libjni_sprd_dehaze.so"
+    }
+  }
+}

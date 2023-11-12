@@ -1,0 +1,26 @@
+{
+  "buildFiles": [
+    "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/.cxx/cmake/release/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "fbextraction-lib-Release-arm64-v8a": {
+      "artifactName": "fbextraction-lib",
+      "abi": "arm64-v8a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/libs/arm64-v8a/libfbextraction.so"
+    },
+    "imageblend-lib-Release-arm64-v8a": {
+      "artifactName": "imageblend-lib",
+      "abi": "arm64-v8a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/libs/arm64-v8a/libimageblend.so"
+    },
+    "libjni_sprd_imageblendings-Release-arm64-v8a": {
+      "artifactName": "libjni_sprd_imageblendings",
+      "buildCommand": "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/.cxx/cmake/release/arm64-v8a --target libjni_sprd_imageblendings",
+      "abi": "arm64-v8a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libjni_sprd_imageblendings.so"
+    }
+  }
+}

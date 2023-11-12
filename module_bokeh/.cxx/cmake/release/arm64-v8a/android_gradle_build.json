@@ -1,0 +1,69 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/CMakeLists.txt",
+		"/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/blur/CMakeLists.txt",
+		"/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/bokeh/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"libjni_sprd_blur-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libjni_sprd_blur",
+			"buildCommand" : "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/arm64-v8a --target libjni_sprd_blur",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dlibjni_sprd_blur_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O2 -DNDEBUG  -s -fPIC    -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/blur/jni/sprdblur.cpp",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libjni_sprd_blur.so",
+			"toolchain" : "8418698154958291225"
+		},
+		"libjni_sprd_real_bokeh-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libjni_sprd_real_bokeh",
+			"buildCommand" : "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/arm64-v8a --target libjni_sprd_real_bokeh",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DSPRD_NEED_SR -Dlibjni_sprd_real_bokeh_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O2 -DNDEBUG  -s -fPIC    -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/bokeh/jni/sprdrealbokeh.cpp",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libjni_sprd_real_bokeh.so",
+			"toolchain" : "8418698154958291225"
+		},
+		"sprdsr-lib-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "sprdsr-lib",
+			"buildType" : "release",
+			"output" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/libs/arm64-v8a/libsprdsr.so",
+			"toolchain" : "8418698154958291225"
+		}
+	},
+	"toolchains" : 
+	{
+		"8418698154958291225" : 
+		{
+			"cCompilerExecutable" : "/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

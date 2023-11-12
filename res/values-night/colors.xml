@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <color name="colorBlack">#F2F2F2</color>
+    <color name="colorTextLight">#BCBDBE</color>
+
+    <!--jingos theme add-->
+    <color name="tab_text_color">#386BFD</color>
+    <color name="tab_photo_color">#386BFD</color>
+    <color name="photo_bg_color">#0d0d0e</color>
+    <color name="jingos_statusbar_color">#202124</color>
+    <color name="toolbar_text_color">#F2F2F2</color>
+    <color name="tablayout_line">#3B3C3F</color>
+    <color name="empty_text_color">#A2A2A4</color>
+    <color name="floatingActionButton_color">#386BFD</color>
+    <color name="edittext_highlight">#33386BFD</color>
+    <color name="edittext_color">#F2F2F2</color>
+    <color name="dialog_color">#303030</color>
+    <color name="item_albumset_divider">#3B3C3F</color>
+    <color name="item_albumset_arrow">#BDBDBE</color>
+    <color name="item_details_arrow">#ffffff</color>
+
+</resources>

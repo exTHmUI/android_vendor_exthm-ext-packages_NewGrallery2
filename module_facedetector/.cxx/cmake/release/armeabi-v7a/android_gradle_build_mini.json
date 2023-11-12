@@ -1,0 +1,31 @@
+{
+  "buildFiles": [
+    "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_facedetector/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_facedetector/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "detect-lib-Release-armeabi-v7a": {
+      "artifactName": "detect-lib",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_facedetector/libs/detect/armeabi-v7a/libjni_sprd_fd.so"
+    },
+    "align-lib-Release-armeabi-v7a": {
+      "artifactName": "align-lib",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_facedetector/libs/align/armeabi-v7a/libjni_sprd_fa.so"
+    },
+    "verify-lib-Release-armeabi-v7a": {
+      "artifactName": "verify-lib",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_facedetector/libs/verify/armeabi-v7a/libjni_sprd_fv.so"
+    },
+    "libjni_sprd_facedetector-Release-armeabi-v7a": {
+      "artifactName": "libjni_sprd_facedetector",
+      "buildCommand": "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_facedetector/.cxx/cmake/release/armeabi-v7a --target libjni_sprd_facedetector",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/armeabi-v7a/libjni_sprd_facedetector.so"
+    }
+  }
+}

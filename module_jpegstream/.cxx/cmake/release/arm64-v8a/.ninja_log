@@ -1,0 +1,10 @@
+# ninja log v5
+0	72	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/inputstream_wrapper.cpp.o	d59ddd866f461489
+0	72	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/jerr_hook.cpp.o	e59efa58e79ee7ee
+0	77	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/outputstream_wrapper.cpp.o	544d43ccaa2bd0ce
+1	82	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/stream_wrapper.cpp.o	c85686e9dee621e
+0	98	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/jpeg_writer.cpp.o	732eb78f91ebb193
+0	102	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/jpeg_hook.cpp.o	a80491561c18950e
+0	135	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/jpeg_reader.cpp.o	96b65386687f2bc7
+1	140	0	CMakeFiles/libsprdjni_jpegstream2.dir/jni/jpegstream.cpp.o	c800800442adafea
+140	173	0	/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libsprdjni_jpegstream2.so	d95955391e8e2a4d

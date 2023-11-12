@@ -1,0 +1,26 @@
+{
+  "buildFiles": [
+    "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "libjni_sprd_imageblendings-Release-armeabi-v7a": {
+      "artifactName": "libjni_sprd_imageblendings",
+      "buildCommand": "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/.cxx/cmake/release/armeabi-v7a --target libjni_sprd_imageblendings",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/armeabi-v7a/libjni_sprd_imageblendings.so"
+    },
+    "fbextraction-lib-Release-armeabi-v7a": {
+      "artifactName": "fbextraction-lib",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/libs/armeabi-v7a/libfbextraction.so"
+    },
+    "imageblend-lib-Release-armeabi-v7a": {
+      "artifactName": "imageblend-lib",
+      "abi": "armeabi-v7a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_imageblendings/libs/armeabi-v7a/libimageblend.so"
+    }
+  }
+}

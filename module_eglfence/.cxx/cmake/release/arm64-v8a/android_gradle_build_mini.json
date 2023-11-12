@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_eglfence/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_eglfence/.cxx/cmake/release/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "libsprdjni_eglfence2-Release-arm64-v8a": {
+      "artifactName": "libsprdjni_eglfence2",
+      "buildCommand": "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_eglfence/.cxx/cmake/release/arm64-v8a --target libsprdjni_eglfence2",
+      "abi": "arm64-v8a",
+      "output": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libsprdjni_eglfence2.so"
+    }
+  }
+}

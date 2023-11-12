@@ -1,0 +1,8 @@
+Executable : /home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake
+arguments : 
+--build
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_jpegstream/.cxx/cmake/release/arm64-v8a
+--target
+libsprdjni_jpegstream2
+jvmArgs : 
+

@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2",
+      "sdkFolder": "/home/maribel/AndroidSDK",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/build/intermediates",
+      "gradleModulePathName": ":module_smarterase",
+      "moduleRootFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase",
+      "makeFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/.cxx",
+      "cxxFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx",
+      "ndkFolder": "/home/maribel/AndroidSDK/ndk/android-ndk-r19c",
+      "ndkVersion": "19.2.5345600",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "release",
+    "soFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/build/intermediates/cmake/release/lib",
+    "objFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/build/intermediates/cmake/release/obj",
+    "jsonFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release",
+    "gradleBuildOutputFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 26,
+  "cxxBuildFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release/armeabi-v7a",
+  "jsonFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a",
+  "objFolder": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/build/intermediates/cmake/release/obj/armeabi-v7a",
+  "buildCommandFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release/armeabi-v7a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a/CMakeLists.txt",
+    "toolchainWrapperFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a/build_generation_state.json",
+    "cacheKeyFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cxx/release/armeabi-v7a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_smarterase/.cxx/cmake/release/armeabi-v7a/compile_commands.json"
+}

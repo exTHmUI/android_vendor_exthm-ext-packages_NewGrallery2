@@ -1,0 +1,150 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cc" ],
+	"libraries" : 
+	{
+		"libsprdjni_filtershow_filters2-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libsprdjni_filtershow_filters2",
+			"buildCommand" : "/home/maribel/AndroidSDK/cmake/3.6.4111459/bin/cmake --build /home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a --target libsprdjni_filtershow_filters2",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/bwfilter.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/contrast.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/edge.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/exposure.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/fx.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/geometry.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/gradient.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/highlight.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/hsv.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/hue.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O2 -DNDEBUG  -s -fPIC    -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/kmeans.cc",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/negative.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/redeye.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/redEyeMath.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/saturated.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/shadows.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O2 -DNDEBUG  -s -fPIC    -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/tinyplanet.cc",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/vibrance.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlibsprdjni_filtershow_filters2_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -s -fPIC      -c ",
+					"src" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/jni/wbalance.c",
+					"workingDirectory" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_filtershow/.cxx/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/out/lib/arm64-v8a/libsprdjni_filtershow_filters2.so",
+			"toolchain" : "8418698154958291225"
+		}
+	},
+	"toolchains" : 
+	{
+		"8418698154958291225" : 
+		{
+			"cCompilerExecutable" : "/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/maribel/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

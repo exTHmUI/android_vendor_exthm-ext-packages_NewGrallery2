@@ -1,0 +1,8 @@
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/blur/CMakeFiles/edit_cache.dir
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/blur/CMakeFiles/rebuild_cache.dir
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/blur/CMakeFiles/libjni_sprd_blur.dir
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/bokeh/CMakeFiles/edit_cache.dir
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/bokeh/CMakeFiles/rebuild_cache.dir
+/home/maribel/android13/vendor/exthm-prebuilt/NewGrallery2/module_bokeh/.cxx/cmake/release/armeabi-v7a/bokeh/CMakeFiles/libjni_sprd_real_bokeh.dir
