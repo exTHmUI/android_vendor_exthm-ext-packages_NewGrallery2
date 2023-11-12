@@ -63,7 +63,7 @@
 
     <application
         android:name="com.android.gallery3d.app.GalleryAppImpl"
-        usesCleartextHttp="true"
+        android:allowClearUserData="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/jingic_ov_gallery"
         android:label="@string/app_name"
@@ -101,7 +101,8 @@
             android:icon="@drawable/jingic_ov_videoplayer"
             android:label="@string/movie_view_label"
             android:taskAffinity="com.android.gallery3d.app.MovieActivity"
-            android:theme="@style/MovieActivityStyle">
+            android:theme="@style/MovieActivityStyle"
+            android:exported="true">
             <!-- @} -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -173,7 +174,8 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:resizeableActivity="true"
-            android:theme="@style/GalleryV2Theme">
+            android:theme="@style/GalleryV2Theme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -265,6 +267,7 @@
         -->
         <activity
             android:name="com.android.gallery3d.app.Gallery"
+            android:exported="true"
             android:theme="@style/android:Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -280,6 +283,7 @@
             android:name="com.cooliris.media.Gallery"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
+            android:exported="true"
             android:targetActivity="com.android.gallery3d.v2.app.GalleryActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -295,13 +299,15 @@
             android:name="com.android.camera.CameraActivity"
             android:icon="@mipmap/ic_launcher_camera"
             android:label="@string/camera_label"
+            android:exported="true"
             android:taskAffinity="com.android.camera.CameraActivity"
             android:theme="@style/android:Theme.NoDisplay" />
 
         <activity-alias
             android:name="com.android.camera.CameraLauncher"
             android:label="@string/camera_label"
-            android:targetActivity="com.android.camera.CameraActivity">
+            android:targetActivity="com.android.camera.CameraActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -318,6 +324,7 @@
             android:configChanges="keyboard|orientation|screenSize"
             android:label="@string/app_name"
             android:launchMode="singleInstance"
+            android:exported="true"
             android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
@@ -333,6 +340,7 @@
         <activity
             android:name="com.android.gallery3d.app.Wallpaper"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
             android:theme="@style/android:Theme.Translucent.NoTitleBar">
             <intent-filter android:label="@string/camera_setas_wallpaper">
                 <action android:name="android.intent.action.ATTACH_DATA" />
@@ -353,6 +361,7 @@
         </activity>
         <activity
             android:name="com.android.gallery3d.app.TrimVideo"
+            android:exported="true"
             android:label="@string/trim_label">
             <intent-filter android:label="@string/crop_label">
                 <action android:name="com.android.camera.action.TRIM" />
@@ -368,7 +377,8 @@
         <provider
             android:name="com.android.gallery3d.filtershow.provider.SharedImageProvider"
             android:authorities="com.android.gallery3d.filtershow.provider.SharedImageProvider2"
-            android:grantUriPermissions="true" />
+            android:grantUriPermissions="true"
+            android:exported="false" />
 
         <service
             android:name=".filtershow.pipeline.ProcessingService"
@@ -380,6 +390,7 @@
             android:label="@string/title_activity_filter_show"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/Theme.FilterShow">
             <intent-filter>
                 <action android:name="android.intent.action.EDIT" />
@@ -400,6 +411,7 @@
             android:name="com.android.gallery3d.filtershow.crop.CropActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/crop"
+            android:exported="true"
             android:theme="@style/Theme.Crop">
             <intent-filter android:label="@string/crop_label">
                 <action android:name="com.android.camera.action.CROP" />
@@ -421,6 +433,7 @@
         <activity
             android:name="com.android.gallery3d.settings.GallerySettings"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:exported="false"
             android:theme="@style/Theme.Gallery" />
 
         <provider
@@ -438,26 +451,32 @@
         <!-- Modify for bug505102 Avoid flash when click gallery widget Start -->
         <activity
             android:name="com.android.gallery3d.gadget.WidgetClickHandler"
+            android:exported="true"
             android:theme="@style/android:Theme.NoDisplay" />
         <!-- Modify for bug505102 Avoid flash when click gallery widget End -->
         <activity
             android:name="com.android.gallery3d.app.DialogPicker"
+            android:exported="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.GalleryNewUI" />
         <activity
             android:name="com.android.gallery3d.app.AlbumPicker"
+            android:exported="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.GalleryNewUI" />
         <activity
             android:name="com.android.gallery3d.gadget.WidgetTypeChooser"
+            android:exported="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.Gallery.Dialog" />
         <activity
             android:name="com.android.gallery3d.app.FlipSettingsActivity"
+            android:exported="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
 
         <receiver
             android:name="com.android.gallery3d.gadget.PhotoAppWidgetProvider"
+            android:exported="true"
             android:label="@string/appwidget_title">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -467,7 +486,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info_v2" />
         </receiver>
-        <receiver android:name="com.android.gallery3d.app.PackagesMonitor">
+        <receiver android:exported="true" android:name="com.android.gallery3d.app.PackagesMonitor">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
@@ -477,13 +496,15 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="com.android.gallery3d.app.PackagesMonitor$AsyncService" />
+        <service android:exported="true" android:name="com.android.gallery3d.app.PackagesMonitor$AsyncService" />
         <service
+            android:exported="true"
             android:name="com.android.gallery3d.gadget.WidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
         <activity
             android:name="com.android.gallery3d.gadget.WidgetConfigure"
+            android:exported="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/android:Theme.Translucent.NoTitleBar">
             <intent-filter>
@@ -499,7 +520,7 @@
 <!--            </intent-filter>-->
 <!--        </receiver>-->
 
-        <receiver android:name="com.android.gallery3d.app.GalleryStorageReceiver">
+        <receiver android:exported="true" android:name="com.android.gallery3d.app.GalleryStorageReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_EJECT" />
                 <action android:name="android.intent.action.MEDIA_MOUNTED" />
@@ -510,19 +531,21 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="com.android.camera.MediaSaveService" />
+        <service android:exported="true" android:name="com.android.camera.MediaSaveService" />
         <!-- SPRD:Bug474632 bookmark setting  @{ -->
         <activity
             android:name="com.sprd.gallery3d.app.MovieBookmarks"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
             android:icon="@mipmap/ic_launcher_video"
             android:label="@string/video_bookmarks"
+            android:exported="true"
             android:theme="@android:style/Theme.Material.Light"></activity>
         <activity
             android:name="com.sprd.gallery3d.app.EditBookmark"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
             android:icon="@mipmap/ic_launcher_video"
             android:label="@string/video_edit_bookmark"
+            android:exported="true"
             android:theme="@android:style/Theme.Material.Light.Dialog"></activity>
 
         <provider
@@ -536,6 +559,7 @@
             android:icon="@mipmap/ic_launcher_video"
             android:label="@string/movie_view_label"
             android:stateNotNeeded="true"
+            android:exported="true"
             android:taskAffinity="com.sprd.gallery3d.app.NewVideoActivity"
             android:theme="@style/NewVideoStyle">
             <intent-filter>
@@ -606,6 +630,7 @@
             android:icon="@mipmap/ic_launcher_video"
             android:label="@string/movie_view_label"
             android:stateNotNeeded="true"
+            android:exported="true"
             android:taskAffinity="com.sprd.gallery3d.app.VideoActivity">
             <intent-filter>
 
@@ -674,35 +699,41 @@
         <activity
             android:name="com.sprd.gallery3d.app.NewVideoPermissionsActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:exported="true"
             android:taskAffinity="com.sprd.gallery3d.app.NewVideoActivity" />
 
         <activity
             android:name="com.sprd.gallery3d.app.PickVideosPermissionsActivity"
+            android:exported="true"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize" />
 
         <activity
             android:name="com.sprd.gallery3d.app.GalleryPermissionsActivity"
+            android:exported="true"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize" />
 
         <activity
             android:name="com.sprd.gallery3d.app.PickPhotosPermissionsActivity"
+            android:exported="true"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize" />
 
         <activity
             android:name="com.sprd.gallery3d.app.CropPermissionsActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
+            android:exported="true"
             android:taskAffinity="com.sprd.gallery3d.app.CropPermissionsActivity" />
 
         <activity
             android:name="com.sprd.gallery3d.app.MoviePermissionsActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
+            android:exported="true"
             android:taskAffinity="com.android.gallery3d.app.MovieActivity" />
         <!-- @} -->
 
         <!-- SPRD:bug 474614: porting float play @} -->
-        <service android:name="com.android.gallery3d.app.FloatPlayerService" />
+        <service android:exported="true" android:name="com.android.gallery3d.app.FloatPlayerService" />
         <!--
              This activity acts as a trampoline to the new Movie activity,
              so that existing shortcuts are preserved.
@@ -711,12 +742,13 @@
             android:name="com.sprd.gallery3d.app.Video"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
+            android:exported="true"
             android:taskAffinity="com.sprd.gallery3d.app.NewVideoActivity"
             android:theme="@style/android:Theme.NoDisplay"></activity>
         <!-- @} -->
 
         <!-- SPRD: add for mutex for float window and camera -->
-        <service android:name="com.sprd.gallery3d.app.FloatWindowAIDLService">
+        <service android:exported="true" android:name="com.sprd.gallery3d.app.FloatWindowAIDLService">
             <intent-filter>
                 <action android:name="android.gallery3d.action.FloatWindowAIDLService" />
 
@@ -731,6 +763,7 @@
             android:name="com.sprd.gallery3d.app.MovieViewProxySet"
             android:icon="@mipmap/ic_launcher_video"
             android:label="@string/movie_view_parameter_set"
+            android:exported="true"
             android:theme="@style/ProxySetTheme"></activity>
         <!-- @} -->
         <!-- SPRD: AppBackup Feature start {@ -->
@@ -747,6 +780,7 @@
         <!-- SPRD: AppBackup Feature end @} -->
         <activity
             android:name="com.sprd.gallery3d.burstphoto.BurstActivity"
+            android:exported="true"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.android.sprd.gallery3d.burstview" />
@@ -758,10 +792,12 @@
             android:name=".app.DetailsActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
             android:showWhenLocked="true"
+            android:exported="true"
             android:theme="@style/Theme.GalleryNewUI" />
 
         <activity
             android:name="com.sprd.gallery3d.blending.ReplaceActivity"
+            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.android.sprd.gallery3d.imageblending" />
@@ -775,6 +811,7 @@
             android:showWhenLocked="true"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/Theme.Refocus">
             <intent-filter>
                 <action android:name="com.android.sprd.gallery3d.refocusedit" />
@@ -785,6 +822,7 @@
         <activity
             android:name="com.android.gallery3d.v2.widget.WidgetConfigure"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
             android:theme="@style/android:Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
@@ -794,24 +832,29 @@
         <activity
             android:name="com.android.gallery3d.v2.widget.AlbumPicker"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
             android:theme="@style/GalleryV2Theme" />
 
         <activity
             android:name="com.android.gallery3d.v2.widget.DialogPicker"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
             android:theme="@style/GalleryV2Theme" />
 
         <provider
             android:name="com.android.gallery3d.v2.trash.db.TrashProvider"
-            android:authorities="com.android.gallery3d.v2.trash.db.TrashProvider" />
+            android:authorities="com.android.gallery3d.v2.trash.db.TrashProvider"
+            android:exported="false"/>
 
         <provider
             android:name="com.android.gallery3d.v2.discover.db.DiscoverProvider"
-            android:authorities="com.android.gallery3d.v2.discover.db.DiscoverProvider" />
+            android:authorities="com.android.gallery3d.v2.discover.db.DiscoverProvider"
+            android:exported="false" />
 
         <activity
             android:name="com.sprd.gallery3d.app.SDCardPermissionActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
             android:theme="@style/GalleryV2Theme" />
 
         <!--add for feature motion photo Bug #1033745-->
@@ -820,16 +863,19 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/prefered_motion_photo"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/MotionTheme" />
 
         <activity
             android:name="com.sprd.gallery3d.smarterase.SmartEraseActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:exported="true"
             android:screenOrientation="portrait" />
 
         <provider
             android:name="com.android.gallery3d.v2.media.extras.MediaExtrasProvider"
-            android:authorities="com.android.gallery3d.v2.media.extras.MediaExtrasProvider" />
+            android:authorities="com.android.gallery3d.v2.media.extras.MediaExtrasProvider"
+            android:exported="true"/>
 
     </application>
 </manifest>

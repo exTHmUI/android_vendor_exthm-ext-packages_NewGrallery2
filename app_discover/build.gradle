@@ -90,15 +90,17 @@ task jacocoTestReport(type: JacocoReport) {
         xml.enabled = true
         html.enabled = true
     }
-    classDirectories = fileTree(
-            dir: 'build/intermediates/javac/debug/compileDebugJavaWithJavac/classes',
-            excludes: ['**/R*.class',
-                       '**/*$InjectAdapter.class',
-                       '**/*$ModuleAdapter.class',
-                       '**/*$ViewInjector*.class'
-            ])
-    sourceDirectories = files(coverageSourceDirs)
-    executionData = files("$buildDir/outputs/code_coverage/debugAndroidTest/connected/coverage.ec")
+    classDirectories.setFrom(files(classDirectories.files.collect {
+        fileTree(
+                dir: 'build/intermediates/javac/debug/compileDebugJavaWithJavac/classes',
+                excludes: ['**/R*.class',
+                           '**/*$InjectAdapter.class',
+                           '**/*$ModuleAdapter.class',
+                           '**/*$ViewInjector*.class'
+                ])
+    }))
+    sourceDirectories.setFrom(files(coverageSourceDirs))
+    executionData.setFrom(files("$buildDir/outputs/code_coverage/debugAndroidTest/connected/coverage.ec"))
 
     doFirst {
         new File("$buildDir/intermediates/javac/debug/compileDebugJavaWithJavac/classes").eachFileRecurse { file ->
