@@ -40,9 +40,15 @@ public class ApiHelper {
         int JELLY_BEAN_MR2 = 18;
         int P = 28;
         int Q = Build.VERSION_CODES.Q;
+        int R = Build.VERSION_CODES.R;
+        int S = Build.VERSION_CODES.S;
+        int SV2 = Build.VERSION_CODES.S_V2;
+        int TIRAMISU = Build.VERSION_CODES.TIRAMISU;
     }
 
     public static final boolean AT_LEAST_16 = Build.VERSION.SDK_INT >= 16;
+    public static final boolean AT_LEAST_31 = Build.VERSION.SDK_INT >= VERSION_CODES.S;
+    public static final boolean AT_LEAST_TIRAMISU = Build.VERSION.SDK_INT >= VERSION_CODES.TIRAMISU;
 
     public static final boolean USE_888_PIXEL_FORMAT =
             Build.VERSION.SDK_INT >= VERSION_CODES.JELLY_BEAN;

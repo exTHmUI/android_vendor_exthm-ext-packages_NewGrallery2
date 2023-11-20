@@ -2705,11 +2705,14 @@ public class MoviePlayer implements
                         mCaptureHandler.sendMessage(msg);
                         return;
                     /* Bug1376814 Coverity code scanning @{ */
-                    } finally {
+                    }
+                    try {
                         if (rev != null) {
                             rev.release();
                             rev = null;
                         }
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
                     /*Bug 605710 end @}*/
                     /* Bug1376814  }@ */

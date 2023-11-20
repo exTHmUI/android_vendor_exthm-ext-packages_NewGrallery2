@@ -54,9 +54,9 @@ static def getIntVersion(String key) {
 ext {
     //编译配置
     app_package_name = "com.android.gallery3d"
-    compileSdkVersion = 29
-    targetSdkVersion = 29
-    minSdkVersion = 26
+    compileSdkVersion = 33
+    targetSdkVersion = 33
+    minSdkVersion = 29
     Ndk_Version = "19.2.5345600"
 
     //依赖库版本

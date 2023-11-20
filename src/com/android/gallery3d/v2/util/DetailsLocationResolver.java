@@ -15,6 +15,7 @@ import com.android.gallery3d.util.Future;
 import com.android.gallery3d.util.FutureListener;
 import com.android.gallery3d.util.ThreadPool;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 public class DetailsLocationResolver {
@@ -76,11 +77,14 @@ public class DetailsLocationResolver {
             } finally {
                 Utils.closeSilently(is);
                 Utils.closeSilently(pdf);
+            }
+            try {
                 if (mmr != null) {
                     mmr.close();
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
             return loc;
         }
     }

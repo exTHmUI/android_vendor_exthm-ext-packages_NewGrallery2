@@ -28,6 +28,7 @@ import android.provider.MediaStore.Video.VideoColumns;
 import com.android.gallery3d.filtershow.tools.SaveImage.ContentResolverQueryCallback;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -139,15 +140,19 @@ public class SaveVideoFileUtils {
 
     public static int retriveVideoDurationMs(String path) {
         int durationMs = 0;
-        // Calculate the duration of the destination file.
-        MediaMetadataRetriever retriever = new MediaMetadataRetriever();
-        retriever.setDataSource(path);
-        String duration = retriever.extractMetadata(
-                MediaMetadataRetriever.METADATA_KEY_DURATION);
-        if (duration != null) {
-            durationMs = Integer.parseInt(duration);
+        try {
+            // Calculate the duration of the destination file.
+            MediaMetadataRetriever retriever = new MediaMetadataRetriever();
+            retriever.setDataSource(path);
+            String duration = retriever.extractMetadata(
+                    MediaMetadataRetriever.METADATA_KEY_DURATION);
+            if (duration != null) {
+                durationMs = Integer.parseInt(duration);
+            }
+            retriever.release();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        retriever.release();
         return durationMs;
     }
 

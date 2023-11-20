@@ -21,3 +21,4 @@ module_jpegstream/build
 module_jpegstream/.cxx
 module_smarterase/build
 module_smarterase/.cxx
+out/

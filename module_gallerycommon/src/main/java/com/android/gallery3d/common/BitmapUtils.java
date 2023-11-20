@@ -274,10 +274,13 @@ public class BitmapUtils {
             return retriever.getFrameAtTime();
         } catch (Exception e) {
             Log.e(TAG, "createVideoThumbnail error", e);
-        } finally {
+        }
+        try {
             if (retriever != null) {
                 retriever.release();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return null;
     }

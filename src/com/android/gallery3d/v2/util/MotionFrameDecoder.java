@@ -620,34 +620,38 @@ public class MotionFrameDecoder implements UIMessageHandler {
         }
 
         private void deInit() {
-            if (mCodecOutputSurface0 != null) {
-                mCodecOutputSurface0.release();
-                mCodecOutputSurface0 = null;
-            }
+            try {
+                if (mCodecOutputSurface0 != null) {
+                    mCodecOutputSurface0.release();
+                    mCodecOutputSurface0 = null;
+                }
 
-            if (mCodecOutputSurface1 != null) {
-                mCodecOutputSurface1.release();
-                mCodecOutputSurface1 = null;
-            }
+                if (mCodecOutputSurface1 != null) {
+                    mCodecOutputSurface1.release();
+                    mCodecOutputSurface1 = null;
+                }
 
-            if (mMediaExtractor != null) {
-                mMediaExtractor.release();
-                mMediaExtractor = null;
-            }
+                if (mMediaExtractor != null) {
+                    mMediaExtractor.release();
+                    mMediaExtractor = null;
+                }
 
-            if (mMediaCodec0 != null) {
-                mMediaCodec0.release();
-                mMediaCodec0 = null;
-            }
+                if (mMediaCodec0 != null) {
+                    mMediaCodec0.release();
+                    mMediaCodec0 = null;
+                }
 
-            if (mMediaCodec1 != null) {
-                mMediaCodec1.release();
-                mMediaCodec1 = null;
-            }
+                if (mMediaCodec1 != null) {
+                    mMediaCodec1.release();
+                    mMediaCodec1 = null;
+                }
 
-            if (mRetriever != null) {
-                mRetriever.release();
-                mRetriever = null;
+                if (mRetriever != null) {
+                    mRetriever.release();
+                    mRetriever = null;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
 
             Utils.closeSilently(mFis);

@@ -22,23 +22,28 @@ public class PermissionUtil {
     public static final int PERMISSION_REQUEST_CODE = 101;
 
     public static boolean hasPermissions(Context context) {
-        if (Build.VERSION.SDK_INT >= ApiHelper.VERSION_CODES.Q) {
+        if (ApiHelper.AT_LEAST_TIRAMISU) {
             return context.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
                     && context.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
+                    && context.checkSelfPermission(Manifest.permission.READ_MEDIA_IMAGES) == PackageManager.PERMISSION_GRANTED
+                    && context.checkSelfPermission(Manifest.permission.READ_MEDIA_VIDEO) == PackageManager.PERMISSION_GRANTED
                     && context.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
                     && context.checkSelfPermission(Manifest.permission.ACCESS_MEDIA_LOCATION) == PackageManager.PERMISSION_GRANTED;
         } else {
             return context.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
                     && context.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
-                    && context.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+                    && context.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                    && context.checkSelfPermission(Manifest.permission.ACCESS_MEDIA_LOCATION) == PackageManager.PERMISSION_GRANTED;
         }
     }
 
     public static void requestPermissions(Activity activity) {
-        if (Build.VERSION.SDK_INT >= ApiHelper.VERSION_CODES.Q) {
+        if (ApiHelper.AT_LEAST_TIRAMISU) {
             activity.requestPermissions(new String[]{
                     Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.READ_MEDIA_IMAGES,
+                    Manifest.permission.READ_MEDIA_VIDEO,
                     Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.ACCESS_MEDIA_LOCATION,
             }, PERMISSION_REQUEST_CODE);
@@ -47,6 +52,7 @@ public class PermissionUtil {
                     Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE,
                     Manifest.permission.ACCESS_COARSE_LOCATION,
+                    Manifest.permission.ACCESS_MEDIA_LOCATION,
             }, PERMISSION_REQUEST_CODE);
         }
     }
