@@ -363,7 +363,7 @@ public class GalleryActivity2 extends BaseActivity implements TabLayout.OnTabSel
                 tabAlbum.setArguments(albumBundle);
                 mFragments.add(tabAlbum);
 
-                if (false && StandardFrameworks.getInstances().isSupportAIEngine()) {
+                if (StandardFrameworks.getInstances().isSupportAIEngine()) {
                     //添加"发现"
                     Bundle discoverBundle = intent.getExtras() != null ? new Bundle(intent.getExtras()) : new Bundle();
                     discoverBundle.putString(Constants.KEY_BUNDLE_MEDIA_SET_PATH, getDataManager().getTopSetPath(DataManager.INCLUDE_ALL));
