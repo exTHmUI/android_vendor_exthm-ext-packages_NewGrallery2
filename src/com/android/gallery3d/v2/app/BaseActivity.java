@@ -1,6 +1,10 @@
 package com.android.gallery3d.v2.app;
 
+import android.Manifest;
 import android.app.ActivityManager;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -20,6 +24,9 @@ import android.provider.Settings;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.print.PrintHelper;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +37,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.android.gallery3d.R;
 import com.android.gallery3d.app.BatchService;
 import com.android.gallery3d.app.GalleryAppImpl;
 import com.android.gallery3d.app.GalleryStorageUtil;
@@ -491,7 +499,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IStorage
                 && StandardFrameworks.getInstances().isSupportAIEngine()
                 && PermissionUtil.hasPermissions(this)) {
             if (mDiscoverTask == null) {
-                mDiscoverTask = new DiscoverTask(new Handler());
+                mDiscoverTask = new DiscoverTask(new Handler(), this);
             }
             mDiscoverTask.onResume();
         }

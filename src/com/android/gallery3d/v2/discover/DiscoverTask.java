@@ -1,6 +1,12 @@
 package com.android.gallery3d.v2.discover;
 
+import android.Manifest;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.os.Handler;
@@ -9,10 +15,14 @@ import android.os.Process;
 import android.provider.MediaStore;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.util.Log;
 import android.util.SparseIntArray;
 
+import com.android.gallery3d.R;
 import com.android.gallery3d.app.GalleryAppImpl;
 import com.android.gallery3d.app.GalleryStorageUtil;
 import com.android.gallery3d.app.IStorageUtil;
@@ -49,6 +59,8 @@ public class DiscoverTask extends ContentObserver implements DiscoverManager.OnT
     private LocationTask mLocationTask;
 
     private Handler mMainHandler;
+    private NotificationManagerCompat notificationManager;
+    private Context context;
     private boolean mResumed = false;
 
     private final IStorageUtil.StorageChangedListener mStorageChangedListener =
@@ -68,7 +80,7 @@ public class DiscoverTask extends ContentObserver implements DiscoverManager.OnT
                 }
             };
 
-    public DiscoverTask(Handler handler) {
+    public DiscoverTask(Handler handler, Context context) {
         super(handler);
         mMainHandler = new UIHandler<>(this);
         GalleryAppImpl.getApplication().getContentResolver().registerContentObserver(
@@ -80,6 +92,7 @@ public class DiscoverTask extends ContentObserver implements DiscoverManager.OnT
         if (StandardFrameworks.getInstances().isSupportLocation()) {
             mLocationTask = new LocationTask(handler);
         }
+        this.context = context;
     }
 
     @Override
@@ -102,6 +115,7 @@ public class DiscoverTask extends ContentObserver implements DiscoverManager.OnT
         mMainHandler.removeMessages(START_DISCOVER_TASK);
         mMainHandler.sendEmptyMessageDelayed(START_DISCOVER_TASK, DELAY_TIME);
         GalleryStorageUtil.addStorageChangeListener(mStorageChangedListener);
+        postDiscoverTaskNotification();
     }
 
     private void resumeInternal() {
@@ -128,6 +142,33 @@ public class DiscoverTask extends ContentObserver implements DiscoverManager.OnT
         mMainHandler.removeMessages(START_DISCOVER_TASK);
         pauseInternal();
         GalleryStorageUtil.removeStorageChangeListener(mStorageChangedListener);
+        if (notificationManager != null) {
+            notificationManager.cancel(1);
+        }
+    }
+
+    private void postDiscoverTaskNotification() {
+        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        notificationManager = NotificationManagerCompat.from(context);
+        NotificationChannel notificationChannel = new NotificationChannel("discover", "DiscoverTask", NotificationManager.IMPORTANCE_LOW);
+        notificationChannel.setDescription("发现页面更新");
+        notificationManager.createNotificationChannel(notificationChannel);
+        Notification notification = new NotificationCompat.Builder(context, "discover")
+                .setContentTitle("Updating discover page...")
+                .setContentText("This will take a minutes...")
+                .setSmallIcon(R.drawable.ic_tab_discover)
+                .setOngoing(true)
+                .build();
+        notificationManager.notify(1, notification);
     }
 
     private void pauseInternal() {
