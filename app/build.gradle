@@ -9,11 +9,11 @@ android {
             keyPassword 'android'
         }
     }
-    compileSdkVersion rootProject.compileSdkVersion
+    compileSdk rootProject.compileSdkVersion
     defaultConfig {
         applicationId rootProject.app_package_name
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.targetSdkVersion
+        minSdk rootProject.minSdkVersion
+        targetSdk rootProject.targetSdkVersion
         versionCode rootProject.apk_version_int
         versionName rootProject.apk_version
         flavorDimensions "versionCode"

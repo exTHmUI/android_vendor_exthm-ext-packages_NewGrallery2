@@ -67,16 +67,16 @@ ext {
     test_core_version = "1.2.0-beta01"
     test_espresso_version = "3.2.0-beta01"
     tensorflow_lite_version = "1.10.0"
-    material_version = "1.2.0-alpha01"
-    appcompat_version = "1.1.0"
-    recyclerview_version = "1.1.0-rc01"
+    material_version = "1.9.0"
+    appcompat_version = "1.6.1"
+    recyclerview_version = "1.3.2"
     support_v4_version = "1.0.0"
     support_v13_version = "1.0.0"
     glide_version = "4.10.0"
     eventbus_version = "3.1.1"
     jacoco_core_version = "0.8.1"
     robolectric_version = "4.3"
-    exifinterface = "1.1.0-rc01"
+    exifinterface = "1.3.6"
 
     //apk 及 so 版本
     apk_version_int = getIntVersion("app.version")
